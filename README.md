@@ -1,10 +1,10 @@
 # mazzoni-begendiv
 This repository contains scripts developed by members of Mazzoni group at IZW/BeGenDiv 
 
-**Scripts are identified as
-GenNGS: scripts for handling NGS data in general;
-RAD: scripts for handling ddRAD/3RAD data;
-RefGenome: scripts for handling reference genome data and quality control)**
+**Scripts are identified as   
+GenNGS: scripts for handling NGS data in general;   
+RAD: scripts for handling ddRAD/3RAD data;   
+RefGenome: scripts for handling reference genome data and quality control)**   
 
 ### dereplicateFQ
 
