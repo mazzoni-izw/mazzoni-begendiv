@@ -2,11 +2,11 @@
 This repository contains scripts developed by members of Mazzoni group at IZW/BeGenDiv 
 
 **Scripts are identified as   
-GenNGS: scripts for handling NGS data in general;   
+NGSdata: scripts for handling NGS data in general;   
 RAD: scripts for handling ddRAD/3RAD data;   
 RefGenome: scripts for handling reference genome data and quality control)**   
 
-### dereplicateFQ
+### dereplicateFQ (NGSdata)
 
 ```
 usage: dereplicateFQ.py [-h] [--g] fastqIn out
@@ -23,7 +23,7 @@ optional arguments:
   --g, -gzip
 ```
 
-### RAD_digestion
+### RAD_digestion (RAD)
 
 ```
 usage: RAD_digestion.py [-h] -g genomeFile -e enzymeFile [--dd]
@@ -48,7 +48,7 @@ optional arguments:
   --rad, -radseq  Allow fragments to have Start(=first/forward enzyme in list) and End(=second/reverse enzyme in list) of a scaffold as a restriction side. Enable if digesting already digested sequences.
 ```
 
-### checkRestrictionSites
+### checkRestrictionSites (RAD)
 
 ```
 usage: checkRestrictionSites.py [-h] fqIn outCorrect info res1 res2
@@ -68,9 +68,9 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
-### cluserFromPairs
+### clusterFromPairs (NGSdata or RAD)
 
-Script to greedily construct single linkage clusters based on similarity values from pair-wise comparison with `vserach`. Clusters are identified by finding connect components in a similarity graph using the [NetworkX](https://networkx.github.io/) package.
+Script to greedily construct single linkage clusters based on similarity values from pairwise comparison with `vsearch`. Clusters are identified by finding connect components in a similarity graph using the [NetworkX](https://networkx.github.io/) package.
 
 
 ```
