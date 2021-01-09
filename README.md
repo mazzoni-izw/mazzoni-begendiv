@@ -129,3 +129,17 @@ optional arguments:
   --intraCOV  percentage of each population that needs to cover a locus to include it in the structure output [default=0.7]
   --intraCOVtotal  enable this option to have a strict int value as input for --intraCOV 
 ```
+
+### Filter_PCR_duplicates.py (RAD)
+
+```
+usage: Filter_PCR_duplicates.py -r1 Read1.fastq -r2 Read2.fastq -o outputFile
+
+Script to remove PCR duplicates from paired end fastq files (indexes must be present in the fastq ID line for each sequence)"
+
+positional arguments:
+-r1, --read1 forward reads in fastq format(can be zipped)
+-r2, --read2 forward reads in fastq format(can be zipped)
+-o, --out output directory
+```
+
