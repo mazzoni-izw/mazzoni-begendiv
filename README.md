@@ -23,10 +23,12 @@ optional arguments:
   --g, -gzip
 ```
 
-###
+### Filter_Reads.py (NGSdata)
 
 ```
 usage = %prog [options] input.fasta [output.fasta]
+
+filter fasta or fastq reads based on a list of IDs, minimum size or randomly
 
 positional arguments:
   input.fasta   fasta input file
