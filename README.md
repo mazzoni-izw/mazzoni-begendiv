@@ -54,7 +54,7 @@ usage: RAD_digestion.py [-h] -g genomeFile -e enzymeFile [--dd]
                         [-o outputFile] [--q] [--min MIN] [--max MAX] [--gz]
                         [--v] [--rad]
 
-In-silico RAD digestion.
+In-silico RAD digestion of a fasta genome or from merged paired-end reads from ddRAD-like data
 
 optional arguments:
   -h, --help      show this help message and exit
