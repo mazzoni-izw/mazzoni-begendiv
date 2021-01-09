@@ -109,3 +109,23 @@ optional arguments:
   -fq FASTQ, --fastq FASTQ
                         fastq file used as an input for vsearch
 ```
+
+### Create_Haplotype_Structure.py (RAD)
+
+```
+usage: Create_Haplotype_Structure.py popMap mappedCounts popOutDir outDir 
+
+converts the output from Stacks populations into a Structure file based on haplotypes (rather than SNPs), adding new filtering options
+
+positional arguments:
+  popMap        population map used for stacks
+  mappedCounts  tab separated file containing the readcounts per locus
+  popOutDir     output directory of the stacks population module
+  outDir        output directory
+
+optional arguments:
+  --readCOV  minimum read coverage needed for a locus [default=6]
+  --popCOV   total number of populations that needs to cover a locus to include it in the structure output [default=4]
+  --intraCOV  percentage of each population that needs to cover a locus to include it in the structure output [default=0.7]
+  --intraCOVtotal  enable this option to have a strict int value as input for --intraCOV 
+```
