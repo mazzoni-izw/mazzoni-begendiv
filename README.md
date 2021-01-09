@@ -23,6 +23,28 @@ optional arguments:
   --g, -gzip
 ```
 
+###
+
+```
+usage = %prog [options] input.fasta [output.fasta]
+
+positional arguments:
+  input.fasta   fasta input file
+  output.fasta  fasta output file
+
+optional arguments:
+-q, --quiet  do not print status messages to the screen
+-w, --supress-warnings  do not print warnings if a ID was found more or less than once
+-u, --fastq  input file is fastq
+-z, --gzip input file is gzipped
+-l, --min-length  write only sequence with lengths at least X
+-i, --id-list  write only sequence with an ID from this list. 
+-r, --random   randomly sample X sequence from input file
+-e, --regexp   use regular expression instead of exact matching for IDs
+-a, --ignore-at  ignore the first letter of the query IDs if it is an @ 
+-n, --negative  do exactly the opposite of what would normally be done
+```
+
 ### RAD_digestion (RAD)
 
 ```
